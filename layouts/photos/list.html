@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">
+    {{ .Description }}
+  </div>
+  {{- end }}
+</header>
+
+<div id="searchbox">
+    <input id="searchInput" autofocus placeholder="Rechercher une photo... 📷"
+        aria-label="search" type="search" autocomplete="off">
+    <ul id="searchResults" aria-label="search results"></ul>
+</div>
+
+<style>
+    #searchbox {
+        margin-bottom: 60px; /* On double l'espace sous la barre */
+        clear: both;         /* Commande forte : "Rien ne doit se mettre à côté ou derrière moi" */
+        display: block;      /* S'assure que la barre prend son propre étage */
+        position: relative;  /* Aide parfois à régler les soucis de superposition */
+        z-index: 10;         /* S'assure que la barre reste au-dessus au cas où */
+    }
+    #searchInput {
+        width: 100%; padding: 10px; border-radius: 8px;
+        border: 1px solid var(--border); background: var(--entry); color: var(--primary);
+    }
+    #searchResults { list-style: none; padding: 0; }
+    #searchResults li { 
+        background: var(--entry); padding: 10px; margin-bottom: 5px; border-radius: 5px; 
+    }
+    #searchResults li a { font-weight: bold; }
+</style>
+<div id="original-list">
+{{- range .Pages }}
+<article class="post-entry">
+  {{- if .Params.cover.image }}
+  <figure class="entry-cover">
+    <img loading="lazy" src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}">
+  </figure>
+  {{- end }}
+  <header class="entry-header">
+    <h2>{{ .Title }}</h2>
+  </header>
+  <div class="entry-content">
+    <p>{{ .Summary }}</p>
+  </div>
+  <footer class="entry-footer">
+    <span title='{{ .Date.Format "2006-01-02 15:04:05 MST" }}'>{{ .Date.Format "January 2, 2006" }}</span>
+  </footer>
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+</div>
+
+{{ end }}

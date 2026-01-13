@@ -1,0 +1,20 @@
+baseURL = 'https://github.com/lepigeonbaladeur/photography'
+languageCode = 'fr-fr'
+title = 'Le_Pigeon_Baladeur_Photography'
+theme = "PaperMod"
+
+
+[params.profileMode]
+    enabled = true
+    title = "Salut, c'est Le Pigeon Baladeur 👋"
+    subtitle = "Sur mon site, je partage mes photos. En ce moment, je prends des photos avec un Samsung S25 Ultra. Je ne suis pas spécialiste en photographie, mais j'aime beaucoup capturer ce que je vois. C’est pourquoi je voulais vous montrer mes photos ici."
+    imageUrl = "images/logo.webp"
+    imageTitle = "Ma photo de profil"
+    imageWidth = 150
+    imageHeight = 150
+    [[params.profileMode.buttons]]
+            name = "Voir mes photos 📷"
+            url = "/photos/"
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
