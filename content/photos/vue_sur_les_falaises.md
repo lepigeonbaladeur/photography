@@ -6,8 +6,6 @@ cover:
     image: "images/vue_sur_les_falaises.webp"
     alt: "Photo vue sur les falaises de Fécamp"
     relative: false
-    hiddenInSingle: true
+    hiddenInSingle: false
 ---
 Vue sur les falaises ainsi que sur la mer de Fécamp un jour d hiver.
-
-![Les falaises](images/vue_sur_les_falaises.webp)

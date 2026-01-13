@@ -6,8 +6,6 @@ cover:
     image: "images/Les_éoliennes.webp"
     alt: "Photo des éoliennes Fécampoises"
     relative: false
-    hiddenInSingle: true
+    hiddenInSingle: false
 ---
 Une belle vue d éoliennes sous un ciel aux teintes roses.
-
-![Les éoliennes](images/Les_éoliennes.webp)
