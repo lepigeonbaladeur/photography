@@ -6,6 +6,8 @@ cover:
     image: "images/chapelle_notre_dame_du_salut.webp"
     alt: "Photo de la chapelle Notre-Dame."
     relative: false
-    hiddenInSingle: false
+    hiddenInSingle: true
 ---
 Voici ma premiere photo.
+
+![La chapelle](images/chapelle_notre_dame_du_salut.webp)
