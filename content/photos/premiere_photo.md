@@ -1,5 +1,5 @@
 ---
-title: "La chapelle Notre-Dame de la côte"
+title: "Chapelle Notre Dame"
 date: 2026-01-07
 draft: false
 cover:
@@ -8,6 +8,6 @@ cover:
     relative: false
     hiddenInSingle: true
 ---
-Voici ma première photo c'est la chapelle Notre-Dame de la côte située à Fécamp.
+Voici ma premiere photo.
 
 ![La chapelle](/images/chapelle_notre_dame_du_salut.webp)
