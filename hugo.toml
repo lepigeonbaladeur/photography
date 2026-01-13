@@ -5,8 +5,14 @@ theme = "PaperMod"
 
 [outputs]
     home = ["HTML"]
-    section = ["HTML"]
     page = ["HTML"]
+    section = ["HTML"]
+    taxonomy = ["HTML"]
+    term = ["HTML"]
+
+[params]
+    # On force la désactivation de la recherche pour voir si c'est elle qui bloque
+    ShowSearchButton = false
 
 [params.profileMode]
     enabled = true
