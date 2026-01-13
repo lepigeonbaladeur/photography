@@ -17,4 +17,4 @@ theme = "PaperMod"
             url = "/photos/"
 
 [outputs]
-    home = ["HTML", "RSS", "JSON"]
+    home = ["HTML", "RSS"]
