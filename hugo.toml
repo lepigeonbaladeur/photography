@@ -11,8 +11,12 @@ theme = "PaperMod"
     term = ["HTML"]
 
 [params]
-    # On force la désactivation de la recherche pour voir si c'est elle qui bloque
-    ShowSearchButton = false
+    # On désactive ces options pour voir si le build passe
+    ShowShareButtons = false
+    ShowReadingTime = false
+    ShowPostNavLinks = false
+    ShowBreadCrumbs = false
+    ShowCodeCopyButtons = false
 
 [params.profileMode]
     enabled = true
