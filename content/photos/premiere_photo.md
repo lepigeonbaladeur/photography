@@ -8,6 +8,6 @@ cover:
     relative: false
     hiddenInSingle: true
 ---
-Voici ma premiere photo.
+Voici ma premiere photo sur la chapelle Notre-Dame du Salut.
 
 ![La chapelle](images/chapelle_notre_dame_du_salut.webp)
