@@ -17,6 +17,9 @@ theme = "PaperMod"
     ShowPostNavLinks = false
     ShowBreadCrumbs = false
     ShowCodeCopyButtons = false
+    
+    [params.assets]
+        disableFingerprinting = true
 
 [params.profileMode]
     enabled = true
