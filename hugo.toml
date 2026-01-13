@@ -31,4 +31,4 @@ theme = "PaperMod"
     imageHeight = 150
     [[params.profileMode.buttons]]
             name = "Voir mes photos 📷"
-            url = "/photos/"
+            url = "photos/"
