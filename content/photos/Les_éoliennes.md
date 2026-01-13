@@ -8,6 +8,6 @@ cover:
     relative: false
     hiddenInSingle: true
 ---
-Une belle vue d’éoliennes sous un ciel aux teintes roses.
+Une belle vue d éoliennes sous un ciel aux teintes roses.
 
 ![La chapelle](/images/Les_éoliennes.webp)
