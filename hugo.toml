@@ -1,8 +1,12 @@
-baseURL = 'hhttps://lepigeonbaladeur.github.io/photography/'
+baseURL = 'https://lepigeonbaladeur.github.io/photography/'
 languageCode = 'fr-fr'
 title = 'Le_Pigeon_Baladeur_Photography'
 theme = "PaperMod"
 
+[outputs]
+    home = ["HTML"]
+    section = ["HTML"]
+    page = ["HTML"]
 
 [params.profileMode]
     enabled = true
@@ -15,6 +19,3 @@ theme = "PaperMod"
     [[params.profileMode.buttons]]
             name = "Voir mes photos 📷"
             url = "/photos/"
-
-[outputs]
-    home = ["HTML", "RSS"]
